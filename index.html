@@ -6,7 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Miriam J. López</title>
     <style>
+       body {
+           margin: 0;
+           padding: 0;
+           color: purple;
+        } 
+        h2 {
+            color: seagreen;
+            margin-top: unset;
+        }
+        .nav-link {
+            display: inline;
+            float: right;
+            height: 36px;
+        }
 
+        .nav-element{
+            display: inline;
+             padding: 4px;
+              margin-right: 10px;
+               height: 36px;
+        }
     </style>
 </head>
 
@@ -18,8 +38,8 @@
             scr: Orifen de la imagen
             alt: Descripcion de la imagen
         -->
-        <ul style="display: inline; float: right; height: 36 px;">
-            <li style="display: inline; padding: 4px; margin-right: 10px; height: 36px;">
+        <ul  class="nav-link">
+            <li class="nav-element">
                 <a href="#" style="text-decoration: none">Github</a>
                 </li>
             <li style="display: inline;height: 36px;">
@@ -31,7 +51,7 @@
         -->
         <!--Finaliza navbar-->
     </nav>
-    <header style="background-color: aqua;">
+    <header">
         
         <img src="img/perrito2.jpg" alt="Este soy yo" width="30%">
         <div style="display: inline; position: absolute;padding: 15px 50px 15px 50px;">
@@ -52,7 +72,7 @@
     </header>
     <!--finaliza-->
     <!--inicia sección de descipción-->
-    <section style="background-color: beige;">
+    <section style="padding: 0px 80px 0px 80px; ">
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. At a assumenda cum ipsa atque perferendis nobis ex, voluptates repellat, rem maxime labore modi vel eligendi pariatur, eum aliquam suscipit ad!
         </p> 
@@ -65,14 +85,15 @@
     </section>
     <!--finaliza sección de descipción-->
     <!--inicia sección de habilidades-->
-    <section>
+    <section style="background-color: #f9f9fa; padding: 30px 0px 30px 0px;">
 
             <h2>Habilidades</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, est voluptatibus debitis repellendus tempora aliquid ipsam consequatur veniam quae inventore, corporis officiis natus iure recusandae sequi blanditiis, aliquam doloremque impedit?</p>
             <div>
-                <div style="border: 1px solid #000; width: 20%;">
+                <div>
                     <!--inicia tarjeta de lenguaje de programacion-->
-                    <div>
+                    <div style="display: inline;">
+                        <div style="width: 40%;">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png" alt="Python" height="25px">
                         <h4>Python</h4>
                         <span>* 6 años</span>
@@ -87,9 +108,10 @@
                         <span>React</span>
                         <span>Gatsby</span>
                     </div>
+                     </div>  
                    <!--inicia tarjeta de lenguaje de programacion--> 
                 </div>
-                <div style="border: 1px solid #000; width: 20%;">
+                <div style="display: inline; width: 45%;">
                     <div>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png" alt="Pyhton" height="25px">
                         <h4>Javascript</h4>
@@ -106,7 +128,7 @@
                         <span>Gatsby</span>
                     </div>
                 </div>
-                <div style="border: 1px solid #000; width: 20%;">
+                <div style="display: inline; width: 45%;">
                     <div>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png" alt="Pyhton" height="25px">
                         <h4>Javascript</h4>
@@ -123,7 +145,7 @@
                         <span>Gatsby</span>
                     </div>
                 </div>
-                <div style="border: 1px solid #000; width: 20%;">
+                <div style="display: inline; width: 45%;">
                     <div>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png" alt="Pyhton" height="25px">
                         <h4>Javascript</h4>
@@ -161,26 +183,28 @@
     </section>
     <!--finaliza sección de imagen-->
     <!--inicia sección de formulario-->
-    <section style="background-color: beige;">
+    <section>
         <h2>Contáctanos</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At tempore rerum, nam eos nobis nostrum necessitatibus possimus? Cumque reprehenderit quibusdam earum iure quod ut ipsam maiores voluptatum iste omnis. Quis?</p>
         <form action="#">
+            <div style="margin-bottom: 0px 150px 0px 150px;">
             <input type="text" placeholder="Tu nombre">
             <input type="text" placeholder="Tu correo electónico">
+            </div>
             <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
-        <button>Enviar</button>
+        <button style="display: block;">Enviar</button>
         </form>
     </section>
     <!--finaliza sección de formulario-->
-    <footer>
-        <div>
-            <p>Diseñado por Miriam Jazmín López Valle</p>
+    <footer style="padding: 20px 10px; background-color: #edf2f7;">
+        <div style="display: inline;">
+            <p style="display: inline;">Diseñado por Miriam Jazmín López Valle</p>
         </div>
-        <div>
-            <ul>
-                <li>😁</li>
-                <li>🤔</li>
-                <li>😀</li>
+        <div style="display: inline; float: right;">
+            <ul style="display: inline;">
+                <li style="display: inline;">😁</li>
+                <li style="display: inline;">🤔</li>
+                <li style="display: inline;">😀</li>
             </ul>
         </div>
     </footer>   
